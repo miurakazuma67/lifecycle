@@ -4,11 +4,11 @@
 
 ## ライフサイクルについて
 **ライフサイクル**とは、簡単に言うと**アプリが起動してから終了するまでの一連の流れ**のことです。  
-Swiftのライフサイクルについて、今回はViewControllerでのライフサイクルについて調べてみてわかったことを自分なりにまとめてみます。
+Swiftのライフサイクルについて、今回は特にViewControllerでのライフサイクルについて調べてみてわかったことを自分なりにまとめてみます。
 
 ## 流れ
-ViewControllerでのライフサイクルは、
-1.loadView(storyboardをコードで作るとき使う)  
+ViewControllerでのライフサイクルは、  
+1.loadView(storyboardをコードで作るとき使う)    
 2.viewDidload(viewを読み込む際に呼ばれる。アプリ起動時に一回呼ばれるイメージ)  
 3.viewWillAppear(viewが表示される前、画面切り替え時などの直前)  
 4.viewWillLayoutSubviews(制約を変えるとき使う)  
