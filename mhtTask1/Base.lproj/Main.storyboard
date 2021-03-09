@@ -1,24 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mhtTask1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bB-F3-euh">
+                                <rect key="frame" x="50" y="94" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hed-Wc-UdH"/>
+                                    <constraint firstAttribute="width" constant="60" id="yPC-gB-roO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="red">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="redTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LMD-K7-bCk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AL1-Iv-m49">
+                                <rect key="frame" x="50" y="164" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Mi6-dt-Zoz"/>
+                                    <constraint firstAttribute="height" constant="60" id="Of5-Tg-Zbz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="yellow">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="yellowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gi0-Ne-TCR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCA-P5-Dh0">
+                                <rect key="frame" x="50" y="234" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="OG7-2g-Ggc"/>
+                                    <constraint firstAttribute="height" constant="60" id="xZy-Ph-S6T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="blueTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vtw-6P-VvS"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RO8-kP-wwG">
+                                <rect key="frame" x="118" y="94" width="208" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="IRx-VL-B3e"/>
+                                    <constraint firstAttribute="height" constant="200" id="lbL-hx-GGC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5bB-F3-euh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="3w5-m1-VJX"/>
+                            <constraint firstItem="AL1-Iv-m49" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="9Qa-ku-Ckg"/>
+                            <constraint firstItem="RCA-P5-Dh0" firstAttribute="top" secondItem="AL1-Iv-m49" secondAttribute="bottom" constant="10" id="OWc-0u-DEK"/>
+                            <constraint firstItem="AL1-Iv-m49" firstAttribute="top" secondItem="5bB-F3-euh" secondAttribute="bottom" constant="10" id="U35-PN-5mO"/>
+                            <constraint firstItem="RCA-P5-Dh0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="c1M-r2-5Iy"/>
+                            <constraint firstItem="RO8-kP-wwG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="e29-V2-NcK"/>
+                            <constraint firstItem="5bB-F3-euh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="nL5-I3-fjx"/>
+                            <constraint firstItem="RO8-kP-wwG" firstAttribute="leading" secondItem="5bB-F3-euh" secondAttribute="trailing" constant="8" symbolic="YES" id="vTK-ax-eCI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueButton" destination="RCA-P5-Dh0" id="8lt-Fu-mhB"/>
+                        <outlet property="changeView" destination="RO8-kP-wwG" id="Arn-h4-4Ss"/>
+                        <outlet property="redButton" destination="5bB-F3-euh" id="Xws-3r-WLA"/>
+                        <outlet property="yellowButton" destination="AL1-Iv-m49" id="WiK-Gu-nnH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
