@@ -8,14 +8,14 @@ Swiftのライフサイクルについて、今回は特にViewControllerでの�
 
 ## 流れ
 ViewControllerでのライフサイクルは、  
-1.loadView(storyboardをコードで作るとき使う)    
-2.viewDidload(viewを読み込む際に呼ばれる。アプリ起動時に一回呼ばれるイメージ)  
-3.viewWillAppear(viewが表示される前、画面切り替え時などの直前)  
-4.viewWillLayoutSubviews(制約を変えるとき使う)  
-5.viewDidLayoutSubviews(4と同じ)  
-6.viewDidAppear(viewが表示されたあと、画面切り替え時などの直後)  
-7.viewWillDisappear(viewが消える直前、アプリ終了直前に出力される)  
-8.viewDidDisappear(viewが消える直後、アプリ終了直後に出力される)  
+1.**loadView**(storyboardをコードで作るとき使う)    
+2.**viewDidload**(viewを読み込む際に呼ばれる。アプリ起動時に一回呼ばれるイメージ)  
+3.**viewWillAppear**(viewが表示される前、画面切り替え時などの直前)  
+4.**viewWillLayoutSubviews**(制約を変えるとき使う)  
+5.**viewDidLayoutSubviews**(4と同じ)  
+6.**viewDidAppear**(viewが表示されたあと、画面切り替え時などの直後)  
+7.**viewWillDisappear**(viewが消える直前、アプリ終了直前に出力される)  
+8.**viewDidDisappear**(viewが消える直後、アプリ終了直後に出力される)  
 という流れで実行されていきます。
 
 ## 出力について
